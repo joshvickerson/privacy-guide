@@ -18,29 +18,127 @@
 
     <link rel="canonical" href="https://www.privacyguide.me/">
 
-    <link rel="stylesheet" href="/assets/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <header class="page-header">
         <nav>
             <a href="/">Home</a>
-            <a href="/about">About</a>
+            <a href="./about.html">About</a>
         </nav>
     </header>
     <main>
         <h1>PrivacyGuide.Me</h1>
-        <p>
-            A simple guide to maintaining your privacy online by restricting the amount of data collected about you as you go about your life online. The tools, application settings, and best practices outlined here will provide a basic level of protection against constant online surveillance. <strong>These steps alone will not be enough to protect you against a targeted surveillance campaign,</strong> but it will make it more difficult for advertisers and other groups to identify you by your online activity.
-        </p>
-        <p class="wip-note">
-            This site is an early work in progress. If you'd like to submit a correction or suggestion, <a href="https://github.com/joshvickerson/privacy-guide/issues">please file an issue on Github</a>, or <a href="https://twitter.com/joshvickerson/">reach out on Twitter</a>.
-        </p>
-
+        <section>
+            <p>
+                A simple guide to maintaining your privacy online by restricting the amount of data collected about you as you go about your life online. The tools, application settings, and best practices outlined here will provide a basic level of protection against constant online surveillance.
+                <br/><br/>
+                <strong>These steps alone will not be enough to protect you against a targeted surveillance campaign,</strong> but it will make it more difficult for advertisers and other groups to identify you by your online activity.
+            </p>
+            <p class="callout-note">
+                This site is an early work in progress, and additional citations and recommendations are still needed. If you'd like to submit a correction or contribute to this guide, <a href="https://github.com/joshvickerson/privacy-guide/issues">please file an issue on Github</a>, <a href="https://twitter.com/joshvickerson/">reach out on Twitter</a>, or <a href="mailto:contact@privacyguide.me">send me an email</a>.
+            </p>
+        </section>
+        <section class="guide-main">
+            <h2>Steps You Can Take</h2>
+            <p>
+                The following steps can help you claw back a degree of privacy from pervasive online surveillance. They are presented in no particular order, with no assumed importance. Privacy is a very personal topic - only you can decide what protections are most important.
+            </p>
+            <details id="stop-chrome" class="guide-step">
+                <summary>Stop using Google Chrome</summary>
+                <h3 class="guide-step__header">Why</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Chrome offers the fewest built-in privacy protections.</li>
+                    <li class="guide-step__list-item">As other browsers block tracking mechanisms, Google is proposing a new tracking mechanism called the <a href="https://www.theverge.com/2022/1/25/22900567/google-floc-abandon-topics-api-cookies-tracking">Topics API to replace third-party cookies</a>. The Electronic Frontier Foundation is still concerned about it, despite it being an improvement over <a href="https://www.eff.org/deeplinks/2021/03/googles-floc-terrible-idea">Google's other proposed new tracking mechanism, FLoC</a>. Chrome is the only browser implementing new tracking methods.</li>
+                    <li class="guide-step__list-item">Content filtering extensions like <a href="https://www.theverge.com/2022/6/10/23131029/mozilla-ad-blocking-firefox-google-chrome-privacy-manifest-v3-web-request">ad blockers will be less effective in Chrome</a> beginning in 2023.</li>
+                </ul>
+                <h3 class="guide-step__header">What to Do</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Use <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> (my personal choice), <a href="https://www.microsoft.com/en-us/edge">Edge</a>, Safari (iOS, macOS only), or <a href="https://brave.com/download/">Brave</a>.</li>
+                </ul>
+            </details>
+            <details id="stop-google-search" class="guide-step">
+                <summary>Stop using Google Search</summary>
+                <h3 class="guide-step__header">Why</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Google aggressively keeps your search history to build a targeted advertising profile</li>
+                </ul>
+                <h3 class="guide-step__header">What to Do</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Use a privacy-focused search engine like <a href="https://duck.com">DuckDuckGo</a></li>
+                    <li class="guide-step__list-item">When you need to use Google for some reason, ensure you're in private browsing mode and not signed in to a Google account</li>
+                </ul>
+            </details>
+            <details id="use-content-blocker" class="guide-step">
+                <summary>Use a Content (Ad) Blocker</summary>
+                <p class="callout-note">
+                    I'd like to expand this section with more example extensions and apps, paricularly for Android. Please reach out with recommendations!
+                </p>
+                <h3 class="guide-step__header">Why</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">It's well known that online ads track you across the internet</li>
+                    <li class="guide-step__list-item">Other non-advertising third party tools on websites can be used to track your behavior across the internet. There are likely multiple trackers on most websites you visit every day.</li>
+                </ul>
+                <h3 class="guide-step__header">What to Do</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">A good content filter like <a href="https://ublockorigin.com/">uBlock Origin</a> can protect you against hundreds of thousands of trackers, including <a href="https://arstechnica.com/information-technology/2022/05/some-top-100000-websites-collect-everything-you-type-before-you-hit-submit/?comments=1">keyloggers that collect form information before you submit</a></li>
+                    <li class="guide-step__list-item">Install a content filtering app on your phone such as <a href="https://apps.apple.com/us/app/1blocker-ad-blocker/id1365531024">1Blocker on iOS</a>.</li>
+                    <li class="guide-step__list-item">Check sites you visit for trackers with <a href="https://themarkup.org/blacklight">The Markup's Blacklight tool</a></li>
+                </ul>
+            </details>
+            <details id="use-vpn" class="guide-step">
+                <summary>Use a VPN</summary>
+                <p class="callout-note">
+                    Using a VPN (Virtual Private Network) may cause issues with certain online services, particularly streaming services such as Hulu or Netflix.
+                </p>
+                <h3 class="guide-step__header">Why</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">VPNs help hide your specific location from IP-address based location tracking</li>
+                    <li class="guide-step__list-item">VPNs protect your personal IP address by routing your browsing through an IP address shared by everyone else using the same VPN service</li>
+                    <li class="guide-step__list-item">VPNs encrypt your web traffic, even on unecrypted (no password) wifi networks, protecting your information from anyone who may be monitoring the network</li>
+                </ul>
+                <h3 class="guide-step__header">What to Do</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">The <a href="https://www.nytimes.com/wirecutter/reviews/best-vpn-service/">Wirecutter guide to VPNs</a> is a reasonable place to start your research</li>
+                    <li class="guide-step__list-item">Be <em>highly</em> skeptical of free VPN services</li>
+                    <li class="guide-step__list-item">Look for privacy or security audits published by VPN services, such as <a href="https://www.ivpn.net/blog/ivpn-apps-security-audit-2022-concluded/">IVPN's 2022 security audit</a>. VPNs are only valuable if you trust them - transparency from the service can help you choose.</li>
+                    <li class="guide-step__list-item">I recommend using a VPN that supports the WireGuard protocol, a modern, fast, secure VPN protocol</li>
+                </ul>
+            </details>
+            <details id="review-apps" class="guide-step">
+                <summary>Regularly Review Apps Installed on Your Phone</summary>
+                <h3 class="guide-step__header">Why</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Apps you installed but no longer use may run background services (even when you "force quit" the app) that collect information about you.</li>
+                </ul>
+                <h3 class="guide-step__header">What to Do</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Uninstall apps you no longer use.</li>
+                    <li class="guide-step__list-item">If you created an account for the app, delete your account before deleting the app. Also check if you are able to contact the service to request all your data be deleted. You can check <a href="https://backgroundchecks.org/justdeleteme/">justdelete.me</a> to lookup how to delete your account on many popular services.</li>
+                    <li class="guide-step__list-item">Review device permissions for apps you do use (in particular, location), and revoke permissions the apps don't need for your use.</li>
+                </ul>
+            </details>
+            <details id="review-apps" class="guide-step">
+                <summary>Limit Ad Tracking on Your Phone</summary>
+                <h3 class="guide-step__header">Why</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Android provides a unique advertising identifier tied directly to your phone. Services exist that build databases tying these identifiers to other information such as your name and email.</li>
+                    <li class="guide-step__list-item">As of iOS 14, Apple no longer provides an identifier like this. Instead, apps will ask for permission to track you.</li>
+                </ul>
+                <h3 class="guide-step__header">What to Do</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">If y</li>
+                    <li class="guide-step__list-item"><a href="https://www.howtogeek.com/732879/how-to-reset-your-advertising-id-on-android/">Reset your Android advertising ID</a> on a regular basis.</li>
+                    <li class="guide-step__list-item"><a href="https://www.howtogeek.com/732909/how-to-reset-your-advertising-id-on-iphone/">Disable personalized ads on iPhone</a>.</li>
+                    <li class="guide-step__list-item">Turn off tracking requests on iOS to always deny apps from tracking you. You can find the option in Settings > Privacy > Tracking</li>
+                </ul>
+            </details>
+        </section>
     </main>
 
     <footer class="page-footer">
-        <small>Copyright Josh Vickerson</small>
+        <small>Copyright 2022, Josh Vickerson</small>
     </footer>
 
 </body>

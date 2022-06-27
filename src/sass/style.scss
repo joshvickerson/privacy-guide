@@ -1,9 +1,10 @@
 :root {
     --accent: #035096;
-    --accent-bg: rgba(3,80,150, 0.15);
-    --error: #960307;
+    --accent-bg: rgb(220, 229, 238);
+    --warning: #960307;
     --success: #397D02;
-    --grey: #4f4f4f;
+    --gray: #4f4f4f;
+    --light-gray: #ededed;
     --black: #1A1A1A;
 }
 
@@ -49,7 +50,7 @@ nav a {
 main {
     flex-grow: 1;
     margin: 0 auto;
-    max-width: 60ch;
+    max-width: 64ch;
     width: 100%;
 }
 
@@ -110,7 +111,10 @@ small {
     font-size: 0.8em;
 }
 
-.wip-note {
-    background-color: var(--accent-bg);
-    color: var(--accent);
+.guide-main {
+    border-top: 1.5px solid var(--gray);
+    padding-top: 1.5rem;
 }
+
+@import 'components/callout-note';
+@import 'components/guide-step';

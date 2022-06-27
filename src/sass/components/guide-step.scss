@@ -1,0 +1,32 @@
+/*
+* A summary disclosure widget for details about tools steps in the guide
+*/
+.guide-step {
+    background-color: var(--light-gray);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    padding: 1rem 2rem;
+
+    summary {
+        font-size: 1.25rem;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:focus-visible {
+            outline: 2px solid var(--accent);
+            outline-offset: 2px;
+        }
+    }
+}
+
+.guide-step__header {
+    font-size: 1.125rem;
+    margin: 1.25rem 0 .25rem;
+}
+
+.guide-step__list {
+    margin-top: 0;
+    padding-left: 1.75rem;
+}
