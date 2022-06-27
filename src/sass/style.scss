@@ -1,0 +1,116 @@
+:root {
+    --accent: #035096;
+    --accent-bg: rgba(3,80,150, 0.15);
+    --error: #960307;
+    --success: #397D02;
+    --grey: #4f4f4f;
+    --black: #1A1A1A;
+}
+
+html {
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    line-height: 1.65;
+    margin: 0 24px;
+    min-height: 100vh;
+}
+
+@media only screen and (max-width: 468px) {
+    .page-header {
+        flex-direction: column;
+    }
+}
+
+.page-header {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.page-header nav a:not(:hover):not(:focus) {
+    color: currentColor;
+    text-decoration: none;
+}
+
+nav a {
+    font-size: 1.25em;
+    margin: 0 12px;
+}
+
+main {
+    flex-grow: 1;
+    margin: 0 auto;
+    max-width: 60ch;
+    width: 100%;
+}
+
+.page-footer {
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+a[href] {
+    color: var(--accent);
+}
+
+a[href]:hover {
+    text-decoration: none;
+}
+
+a[href]:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.footnotes {
+    font-size: 0.8em;
+}
+
+/* Typography */
+p {
+    margin-bottom: 1.15rem;
+}
+
+h1, h2, h3, h4, h5 {
+    font-weight: 400;
+    line-height: 1.15;
+    margin: 2.75rem 0 1.05rem;
+}
+
+h1 {
+    font-size: 3.052em;
+}
+
+h2 {
+    font-size: 2.441em;
+}
+
+h3 {
+    font-size: 1.953em;
+}
+
+h4 {
+    font-size: 1.563em;
+}
+
+h5, .larger {
+    font-size: 1.25em;
+}
+
+small {
+    font-size: 0.8em;
+}
+
+.wip-note {
+    background-color: var(--accent-bg);
+    color: var(--accent);
+}
