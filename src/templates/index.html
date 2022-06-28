@@ -4,7 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon"> -->
 
     <title>PrivacyGuide.me</title>
 
@@ -37,7 +37,7 @@
                 <strong>These steps alone will not be enough to protect you against a targeted surveillance campaign,</strong> but it will make it more difficult for advertisers and other groups to identify you by your online activity.
             </p>
             <p class="callout-note">
-                This site is an early work in progress, and additional citations and recommendations are still needed. If you'd like to submit a correction or contribute to this guide, <a href="https://github.com/joshvickerson/privacy-guide/issues">please file an issue on Github</a>, <a href="https://twitter.com/joshvickerson/">reach out on Twitter</a>, or <a href="mailto:contact@privacyguide.me">send me an email</a>.
+                This site is an early work in progress, and additional citations and recommendations are still needed. If you'd like to submit a correction or contribute to this guide, <a href="https://github.com/joshvickerson/privacy-guide/issues">please file an issue on Github</a>, <a href="https://twitter.com/joshvickerson/">reach out on Twitter</a>, or <a href="mailto:contact@privacyguide.me?subject=PrivacyGuide.me Request">send me an email</a>.
             </p>
         </section>
         <section class="guide-main">
@@ -55,7 +55,7 @@
                 </ul>
                 <h3 class="guide-step__header">What to Do</h3>
                 <ul class="guide-step__list">
-                    <li class="guide-step__list-item">Use <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> (my personal choice), <a href="https://www.microsoft.com/en-us/edge">Edge</a>, Safari (iOS, macOS only), or <a href="https://brave.com/download/">Brave</a>.</li>
+                    <li class="guide-step__list-item">Use <a href="https://www.mozilla.org/en-US/firefox/new/">Firefox</a> (my personal recommendation), <a href="https://www.microsoft.com/en-us/edge">Edge</a>, Safari (iOS, macOS only), or <a href="https://brave.com/download/">Brave</a>.</li>
                 </ul>
             </details>
             <details id="stop-google-search" class="guide-step">
@@ -106,6 +106,19 @@
                     <li class="guide-step__list-item">I recommend using a VPN that supports the WireGuard protocol, a modern, fast, secure VPN protocol</li>
                 </ul>
             </details>
+            <details id="password-manager" class="guide-step">
+                <summary>Use a Password Manager</summary>
+                <h3 class="guide-step__header">Why</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Most of us have more online accounts than we can keep track of. A good password manager makes it easy to not re-use passwords so your information is safer in the event of a breach in another service you use.</li>
+                    <li class="guide-step__list-item">Most password managers can also be a 2-Factor Authentication (2FA) app, further securing your account. Use an authenticator app instead of text-message based 2FA as often as possible.</li>
+                </ul>
+                <h3 class="guide-step__header">What to Do</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Use a password manager like <a href="https://1password.com/">1Password</a>, <a href="https://www.lastpass.com/">LastPass</a> or <a href="https://www.dashlane.com/">Dashlane</a></li>
+                    <li class="guide-step__list-item">Dedicated password manager apps typically offer more features than the password managers built in to web browsers, including the ability to autofill passwords in native apps, and reliable cross-platform syncing.</li>
+                </ul>
+            </details>
             <details id="review-apps" class="guide-step">
                 <summary>Regularly Review Apps Installed on Your Phone</summary>
                 <h3 class="guide-step__header">Why</h3>
@@ -119,7 +132,7 @@
                     <li class="guide-step__list-item">Review device permissions for apps you do use (in particular, location), and revoke permissions the apps don't need for your use.</li>
                 </ul>
             </details>
-            <details id="review-apps" class="guide-step">
+            <details id="limit-ad-tracking" class="guide-step">
                 <summary>Limit Ad Tracking on Your Phone</summary>
                 <h3 class="guide-step__header">Why</h3>
                 <ul class="guide-step__list">
@@ -133,11 +146,38 @@
                     <li class="guide-step__list-item">Turn off tracking requests on iOS to always deny apps from tracking you. You can find the option in Settings > Privacy > Tracking</li>
                 </ul>
             </details>
+            <details id="use-strict-settings" class="guide-step">
+                <summary>Use Strict Tracking Prevention & Security Settings</summary>
+                <h3 class="guide-step__header">Why</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Browsers with built-in tracking protection sometimes offer different levels of protection. The strictest settings provide the best level of protection. In my experience the website breakage they warn about is fairly rare.</li>
+                    <li class="guide-step__list-item">In my experience the website breakage they warn about is fairly rare. It's also quite easy to disable on a per-site basis for sites you must use. Firefox also makes it convenient to report website breakage to help improve the feature.</li>
+                </ul>
+                <h3 class="guide-step__header">What to Do</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Review <a href="https://support.microsoft.com/en-us/microsoft-edge/learn-about-tracking-prevention-in-microsoft-edge-5ac125e8-9b90-8d59-fa2c-7f2e9a44d869">tracking protection settings in Microsoft Edge</a>.</li>
+                    <li class="guide-step__list-item">Review <a href="https://support.mozilla.org/en-US/kb/enhanced-tracking-protection-firefox-desktop">tracking protection settings in Firefox.</a></li>
+                    <li class="guide-step__list-item"><a href="https://support.mozilla.org/en-US/kb/https-only-prefs">Enable HTTPS-only mode in Firefox</a> to ensure connections to every site you visit are secure to help protect your information.</li>
+                </ul>
+            </details>
+            <details id="use-strict-settings" class="guide-step">
+                <summary>Remove URL Tracking Parameters</summary>
+                <h3 class="guide-step__header">Why</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Links you click on may contain special tracking parameters that websites read when you visit to inform their analytics.</li>
+                </ul>
+                <h3 class="guide-step__header">What to Do</h3>
+                <ul class="guide-step__list">
+                    <li class="guide-step__list-item">Use browser extensions like <a href="https://addons.mozilla.org/en-US/firefox/addon/neat-url/">Neat URL for Firefox</a> to remove these parameters as you browse the web to further limit tracking. Neat URL is also available for <a href="https://chrome.google.com/webstore/detail/neat-url/jchobbjgibcahbheicfocecmhocglkco">Chrome</a></li>
+                    <li class="guide-step__list-item"><a href="https://microsoftedge.microsoft.com/addons/detail/clearurls/mdkdmaickkfdekbjdoojfalpbkgaddei">Clear URL for Edge</a> is a similar extension.</li>
+                    <li class="guide-step__list-item"><strong>Bonus:</strong> Do you friends a solid and learn to recognize tracking parameters in links you copy and paste, and remove them before sending them to anyone.</li>
+                </ul>
+            </details>
         </section>
     </main>
 
     <footer class="page-footer">
-        <small>Copyright 2022, Josh Vickerson</small>
+        <small>Copyright Josh Vickerson</small>
     </footer>
 
 </body>
